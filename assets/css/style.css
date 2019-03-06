@@ -1,10 +1,121 @@
-.footer {
+/* Background Image */
+body {
+    margin: 0;
+    background-image: url("../images/dynamic-style.png");
+}
+
+/* getting rid of margin bottom on my row */
+.row {
+    margin-bottom: -16px;
+}
+
+/* Links in gray color */
+a {
+    color: #4aaaa5;
+}
+
+/* Name in white */
+h1 {
+    color: #ffffff;
+}
+
+/* About Me text modifications */
+h2 {
+    color: #4aaaa5;
+}
+
+/* Mouse-over link changes color */
+a:hover {
+    background-color: #666666;
+}
+
+/* name highlighted */
+#nameColor {
+    background-color: #4aaaa5;
+    /* display: inline-block;
+    text-align: center; */
+}
+
+/* Header border specifications */
+.headerBorder {
+    background-color: #cccccc;
+    height: 2px;
+    width: auto;
+    margin-left: 46px;
+    margin-top: 0px;
+    padding-left: 30px;
+    border: none;
+}
+
+/* text inside images in portfolio page */
+.portfolioText {
     position: absolute;
     bottom: 0;
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    line-height: 60px; /* Vertically center the text there */
-    background-color: gray;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    vertical-align: center;
     text-align: center;
-  }
+    width: 90.6%;
+    background-color: gray;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+/* media query to create container for images in portfolio when screen size
+is smaller than 980px */
+@media screen and (max-width: 980px) {
+    #imageTextBox {
+        width: 400px;
+    }
+
+}
+
+/* Content border specifications */
+.contentBorder {
+    background-color: #dddddd;
+    height: 2px;
+    border: none;
+    width: auto;
+}
+
+#footer {
+    background-color: #666666;
+    border-top: 5px solid #cccccc;
+    color: #cccccc;
+    font-family: sans-serif;
+}
+
+/* changing navigation background color */
+.navbar-custom {
+    background-color: #666666;
+    border-top: 5px solid #cccccc;
+    color: #cccccc;
+    font-family: sans-serif;
+}
+
+/* my name being highlighted */
+.navbarNameText {
+    background-color: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: -8px;
+    margin-top: -8px;
+}
+
+/* change the brand and text color */
+.navbarNameText .navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+
+/* change the link color */
+.navbarNameText .navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+
+/* change the color of active or hovered links */
+.navbarNameText .navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
