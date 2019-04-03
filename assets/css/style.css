@@ -14,13 +14,17 @@ a {
     color: #4aaaa5;
 }
 
+p {
+    color: #777777;
+}
+
 /* Name in white */
 h1 {
     color: #ffffff;
 }
 
 /* About Me text modifications */
-h2 {
+h2, h5 {
     color: #4aaaa5;
 }
 
